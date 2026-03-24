@@ -20,7 +20,7 @@ app.get('/health', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Dashboard API Running');
+  res.status(200).json({ status: 'ok' });
 });
 
 app.listen(PORT, () => {
